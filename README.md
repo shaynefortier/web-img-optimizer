@@ -4,7 +4,7 @@
 
 A quick script to resize and compress images in bulk for publishing on a website.
 
-### Dependancies
+### Dependencies
 
 - ImageMagick - https://imagemagick.org/
 - optipng (Linux)
