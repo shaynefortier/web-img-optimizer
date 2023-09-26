@@ -12,7 +12,7 @@ A quick script to resize and compress images in bulk for publishing on a website
 
 ### Linux
 
-Just place the script to an image folder than use this command:
+Just place the script to an image folder then use this command:
 
 ```
 ./img-optimizer.sh
@@ -20,7 +20,7 @@ Just place the script to an image folder than use this command:
 
 ### Windows
 
-Just place the script to an image folder than use this command:
+Just place the script to an image folder then use this command:
 
 ```
 ./img-optimizer.bat
