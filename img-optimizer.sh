@@ -48,10 +48,10 @@ function optimize_image {
     local extension="${image##*.}"
     case $extension in
         jpg|jpeg)
-            jpegoptim -d"./optimized/" "$image"
+            jpegoptim "$image"
             ;;
         png)
-            optipng -out "./optimized/${image}" "$image"
+            optipng "$image"
             ;;
     esac
 }
@@ -59,11 +59,15 @@ function optimize_image {
 # Main script
 [ ! -d "optimized" ] && mkdir "optimized"
 for image in *.{jpg,jpeg,png}; do
-    resize_image "$image"
+    if [ -e "$image" ]; then
+        resize_image "$image"
+    fi
 done
 
 for image in *.{jpg,jpeg,png}; do
-    [ -f $image ] && convert_image "$image"
-    [ -f $image ] && optimize_image "$image"
-    [ -f $image ] && rm "$image"
+    if [ -e "$image" ]; then
+        convert_image "$image"
+        mv "$image" "./optimized/"
+        optimize_image "./optimized/$image"
+    fi
 done
