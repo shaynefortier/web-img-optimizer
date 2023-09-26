@@ -48,7 +48,7 @@ function optimize_image {
     local extension="${image##*.}"
     case $extension in
         jpg|jpeg)
-            jpegoptim -d "./optimized/${image}" "$image"
+            jpegoptim -d"./optimized/" "$image"
             ;;
         png)
             optipng -out "./optimized/${image}" "$image"
@@ -63,7 +63,7 @@ for image in *.{jpg,jpeg,png}; do
 done
 
 for image in *.{jpg,jpeg,png}; do
-    convert_image "$image"
-    optimize_image "$image"
-    rm "$image"
+    [ -f $image ] && convert_image "$image"
+    [ -f $image ] && optimize_image "$image"
+    [ -f $image ] && rm "$image"
 done
