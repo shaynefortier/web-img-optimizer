@@ -7,8 +7,8 @@ A quick script to resize and compress images in bulk for publishing on a website
 ### Dependencies
 
 - ImageMagick - https://imagemagick.org/
-- optipng (Linux)
-- jpegoptim (Linux)
+- optipng (Linux) - https://optipng.sourceforge.net/
+- jpegoptim (Linux) - https://github.com/tjko/jpegoptim
 
 ### Linux
 
@@ -33,8 +33,8 @@ Un simple script pour redimensionner et compresser les images en grand nombre af
 ### Dépendances
 
 - ImageMagick - https://imagemagick.org/
-- optipng (Linux)
-- jpegoptim (Linux)
+- optipng (Linux) - https://optipng.sourceforge.net/
+- jpegoptim (Linux) - https://github.com/tjko/jpegoptim
 
 ### Linux
 
