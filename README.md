@@ -28,7 +28,7 @@ Just place the script to an image folder then use this command:
 
 ## Français
 
-Un simple script pour redimensionner et compresser les images en grand nombre afin de les publier sur une site web.
+Un simple script pour redimensionner et compresser les images en grand nombre afin de les publier sur un site web.
 
 ### Dépendances
 
